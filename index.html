@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risolicious - Risol Mayones Lezat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Risol<span>icious.</span></a>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang Kami</a>
+        </nav>
+
+        <a href="#keranjang" class="cart-link">
+            🛒 Keranjang <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="hero-content">
+                <p class="tagline">Camilan Favorit Semua Orang</p>
+                <h1>Renyah di Luar,<br>Lezat di Dalam!</h1>
+                <p>
+                    Nikmati risol mayones dengan isian creamy,
+                    smoked beef, telur, dan keju yang menggugah selera.
+                </p>
+                <a href="#produk" class="btn">Pesan Sekarang</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="img/banner.JPEG"
+                >
+            </div>
+        </section>
+
+        <section class="products section" id="produk">
+            <div class="section-heading">
+                <p class="tagline">Menu Pilihan</p>
+                <h2>Risol Mayones Kami</h2>
+                <p>Pilih camilan favoritmu dan nikmati kelezatannya!</p>
+            </div>
+
+            <div class="product-grid" id="product-list"></div>
+        </section>
+
+        <section class="about section" id="tentang">
+            <h2>Mengapa Risolicious?</h2>
+            <div class="features">
+                <div class="feature">
+                    <span>🥚</span>
+                    <h3>Isian Melimpah</h3>
+                    <p>Perpaduan mayones, telur, smoked beef, dan keju.</p>
+                </div>
+                <div class="feature">
+                    <span>🥟</span>
+                    <h3>Renyah dan Lezat</h3>
+                    <p>Camilan gurih yang cocok untuk segala suasana.</p>
+                </div>
+                <div class="feature">
+                    <span>📦</span>
+                    <h3>Praktis Dipesan</h3>
+                    <p>Pilih menu dan kirim pesanan dengan mudah.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section section" id="keranjang">
+            <div class="cart-box">
+                <h2>🛒 Keranjang Belanja</h2>
+                <div id="cart-items">
+                    <p class="empty-cart">Keranjang masih kosong.</p>
+                </div>
+
+                <div class="cart-total">
+                    <span>Total Pembayaran</span>
+                    <strong id="cart-total">Rp0</strong>
+                </div>
+
+                <label for="customer-name">Nama Pemesan</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Masukkan nama kamu"
+                >
+
+                <label for="customer-address">Alamat Pengiriman</label>
+                <textarea
+                    id="customer-address"
+                    placeholder="Masukkan alamat pengiriman"
+                    rows="3"
+                ></textarea>
+
+                <button id="checkout-btn" class="btn checkout-btn">
+                    Pesan via WhatsApp
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Risolicious.</h3>
+        <p>Camilan lezat untuk menemani harimu.</p>
+        <p>&copy; 2026 Risolicious. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
